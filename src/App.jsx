@@ -20,6 +20,7 @@ function App() {
       title: task
     }).then(()=>{
       setFormStatus(false);
+      taskInput.current.value = ''
       fetchTodos();
     })
   }
