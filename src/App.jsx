@@ -62,10 +62,10 @@ function App() {
       <div className="border border-b-neutral-300 py-2">
         <div className="max-w-4xl mx-auto flex justify-between items-center px-5">
           <img className="h-6" src={logo} alt="" />
-          <header>
+          <header className="flex gap-4">
             <Show when="signed-out">
-              <SignInButton />
-              <SignUpButton />
+              <SignInButton className="bg-black/70 text-white px-3 py-1 rounded-full text-sm" />
+              <SignUpButton className="bg-black/70 text-white px-3 py-1 rounded-full text-sm" />
             </Show>
             <Show when="signed-in">
               <UserButton />
